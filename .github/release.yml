@@ -5,7 +5,7 @@ changelog:
   categories:
     - title: Breaking Changes 🛠
       labels:
-        - Testing
+        - duplicate
     - title: Exciting New Features 🎉
       labels:
         - Testing
