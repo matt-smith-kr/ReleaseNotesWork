@@ -1,0 +1,14 @@
+changelog:
+  exclude:
+    labels:
+      - wontfix
+  categories:
+    - title: Breaking Changes 🛠
+      labels:
+        - Testing
+    - title: Exciting New Features 🎉
+      labels:
+        - Testing
+    - title: Other Changes
+      labels:
+        - "*"
