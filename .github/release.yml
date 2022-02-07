@@ -3,12 +3,12 @@ changelog:
     labels:
       - wontfix
   categories:
-    - title: Breaking Changes 🛠
-      labels:
-        - duplicate
     - title: Exciting New Features 🎉
       labels:
         - Testing
-    - title: Other Changes
+    - title: Bug Fixes 🛠
+      labels:
+        - duplicate
+    - title: Misc Changes 🔎
       labels:
         - "*"
