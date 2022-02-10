@@ -5,7 +5,8 @@ inputs:
   versionNumber:
   description: 'this will house the version number of the framework'
   required: true
-runs:
-  using: "composite"
-  steps:
-    - run: echo "I think I did it ${{ versionNumber }}"
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "I think I did it ${{ versionNumber }}"
