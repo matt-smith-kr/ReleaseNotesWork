@@ -1,4 +1,4 @@
-name: 'bump-version-number'
+name: bump-version-number
 description: 'this will house the version number of the framework'
 inputs:
   versionNumber:
