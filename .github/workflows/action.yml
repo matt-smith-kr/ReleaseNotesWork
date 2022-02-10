@@ -1,12 +1,10 @@
-name: bump-version-number
-on: [push]
+name: 'bump-version-number'
 description: 'this will house the version number of the framework'
 inputs:
   versionNumber:
   description: 'this will house the version number of the framework'
   required: true
-jobs:
-  Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "I think I did it ${{ versionNumber }}"
+runs:
+  using: 'composite'
+  steps:
+    - run: echo "I think I did it ${{ versionNumber }}"
