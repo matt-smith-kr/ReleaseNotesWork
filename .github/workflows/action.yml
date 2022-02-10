@@ -7,4 +7,4 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - steps: echo "I think I did it ${{ versionNumber }}"
+    - run: echo "I think I did it ${{ versionNumber }}"
