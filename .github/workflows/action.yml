@@ -1,0 +1,10 @@
+name: bump-version-number
+description: 'this will house the version number of the framework'
+  inputs:
+    versionNumber:
+      description: 'this will house the version number of the framework'
+      required: true
+runs:
+  using: "composite"
+  steps:
+    - steps: echo "I think I did it ${{ versionNumber }}"
