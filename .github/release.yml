@@ -1,14 +1,17 @@
 changelog:
   exclude:
     labels:
-    - wontfix
+    - ignore
   categories:
     - title: Exciting New Features 🎉
       labels:
-      - Testing
+      - enhancement
     - title: Bug Fixes 🛠
       labels:
-      - duplicate
+      - bug
+    - title: Documentation 📓
+      labels:
+      - documentation
     - title: Misc Changes 🔎
       labels:
       - "*"
