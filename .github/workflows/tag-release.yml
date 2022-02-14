@@ -2,13 +2,28 @@ name: Tag update and create release
 on:
   workflow_dispatch:
     inputs:
-      tags:
-        description: 'Release to be tagged as'
+      logLevel:
+        description: 'Log level'
         required: true
-        type: string
+        default: 'warning' 
+        type: choice
+        options:
+        - info
+        - warning
+        - debug 
+      tags:
+        description: 'Test scenario tags'
+        required: false 
+        type: boolean
+      environment:
+        description: 'Environment to run tests against'
+        type: environment
+        required: true 
+
 jobs:
   print-tag:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Print the tag
-        run: echo The tag is ${{ github.event.inputs.tag }}
+      - name: Print the input tag to STDOUT
+        run: echo  The tag is ${{ github.event.inputs.tag }}
