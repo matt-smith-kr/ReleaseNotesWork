@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print the tag
-        run: echo The tag is ${{ github.event.input.tag }}
+        run: echo The tag is ${{ github.event.inputs.tag }}
