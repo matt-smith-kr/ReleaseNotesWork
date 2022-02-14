@@ -1,0 +1,13 @@
+name: Tag update and create release
+on:
+  workflow_dispatch:
+    tags:
+      description: 'Release to be tagged as'
+      required: true
+      type: string
+jobs:
+  print-tag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print the tag
+        run: echo The tag is ${{ github.event.input.tag }}
